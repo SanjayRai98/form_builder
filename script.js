@@ -169,7 +169,7 @@ function createCategorizeQuestion(){
     const form_demo = document.getElementById("form_demo");
     form_demo.innerHTML += `
     <div class="categorize_question">
-        <span class="close cat_close">&times;</span>
+        <span class="close ques_close">&times;</span>
         <div class="categorize_question_marks">
             <label for="ques${questionNo}_marks">Marks:</label>
             <input class="cat_marks" type="number" name="ques${questionNo}_marks" id="ques${questionNo}_marks">
