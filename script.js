@@ -4,7 +4,7 @@ category_button.addEventListener("click", addElement);
 
 function addElement(){
     const category = document.querySelector("#category");
-    console.log(" value of category is " + category.value);
+    //console.log(" value of category is " + category.value);
     if(category.value == "categorize"){
         createCategorizeQuestion();
     }
@@ -41,7 +41,7 @@ const closeFunction = () => {
             //this.parentElement.style.display = 'none';
             this.parentElement.parentElement.removeChild(this.parentElement);
             if(this.parentElement.querySelector(".input_cat")){
-                console.log("condition is true");
+                //console.log("condition is true");
             }
             //console.log(this.parentElement.querySelector(".input_cat"));
         });
@@ -126,7 +126,7 @@ let select_opt = [];
 //updateCategory();
 
 function inVal(event){
-    console.log("input value is " + event.value);
+    //console.log("input value is " + event.value);
     increseOpt(event.value);
 }
 
@@ -135,19 +135,19 @@ function increseOpt(newvalue){
         select_opt.push(newvalue);
         countCategory();
     }
-    console.log("the value of array is " + Object.values(select_opt));
+    //console.log("the value of array is " + Object.values(select_opt));
     //decreseOpt();
     
 }
 
 function decreseOpt(){
     select_opt.pop();
-    console.log("after the pop array value is " + Object.values(select_opt));
+    //console.log("after the pop array value is " + Object.values(select_opt));
 }
 
 function countCategory(){
     for(j=0;j<select_opt.length;j++){
-        console.log("Select array value is " + select_opt[j]);
+        //console.log("Select array value is " + select_opt[j]);
         //cat_len[i].innerHTML += ``;
     }
     let cat_len = document.getElementsByClassName("select_cat");
@@ -155,7 +155,7 @@ function countCategory(){
     for(i=0;i<cat_len.length;i++){
         cat_len[i].innerHTML = '';
         for(j=0;j<select_opt.length;j++){
-            console.log("Select array value is " + select_opt[j]);
+            //console.log("Select array value is " + select_opt[j]);
             cat_len[i].innerHTML += `<option value="${select_opt[j]}">${select_opt[j]}</option>`;
         }
         
