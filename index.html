@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Form Builder Assignment</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="main">
+            <h1>Form Bulider</h1>
+            <div class="creator_form">
+                <div class="category">
+                    <label for="category">Type of Question</label>
+                    <select name="category" id="category">
+                        <option value="categorize">Categorize Question</option>
+                        <option value="cloze">Cloze Question</option>
+                        <option value="comprehension">Comprehension Question</option>
+                    </select>
+                    <button class="category_button">Add</button>
+                </div>
+            </div>
+            <!--<div class="categorize_question">
+                <span class="close ques_close">&times;</span>
+                <div class="categorize_question_marks">
+                    <label for="cat_marks">Marks:</label>
+                    <input class="cat_marks" type="number" name="cat_marks" id="cat_marks">
+                </div>
+                <div class="categorize_question_no">
+                    <h2>Question 1</h2>
+                    <input type="text" id="cat" placeholder="Write you tour Question here">
+                </div>
+                <div class="categorize_category">
+                    <div class="categorize_category_content">
+                        <h2>Category</h2>
+                        <div class="cat_div">
+                            <input class="input_cat" type="text" name="cat1" id="cat1" placeholder="name you Category" onblur="inVal(this)">
+                        </div>
+                        <div class="cat_div">
+                            <input class="input_cat" type="text" name="cat2" id="cat2" placeholder="name you Category" onblur="inVal(this)">
+                        </div>
+                        <div class="cat_div">
+                            <input class="input_cat" type="text" name="cat3" id="cat3" placeholder="name you Category" onblur="inVal(this)">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <button class="add_category">Add more Category</button>
+                </div>
+                <div class="categorize_selection">
+                    <div class="categorize_selection_content">
+                        <div class="cat_selection_heading">
+                            <h2>Items</h2>
+                            <h2>Belongs to</h2>
+                        </div>
+                        <div class="cat_selection">
+                            <input type="text" name="item1" id="item1" placeholder="Enter items">
+                            <select class="select_cat" aria-label="belong_to" name="cat_select" id="cat_select">
+                                <option value="cat1">Cat1</option>
+                                <option value="cat2">Cat2</option>
+                            </select>
+                        </div>
+                        <div class="cat_selection">
+                            <input type="text" name="item2" id="item2" placeholder="Enter items">
+                            <select class="select_cat" aria-label="belong_to" name="cat_select2" id="cat_select2">
+                                <option value="cat1">Cat1</option>
+                                <option value="cat2">Cat2</option>
+                            </select>
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="add_item">Add More Item</button>
+                    </div>
+                </div>
+            </div>-->
+            <div class="cloze_question">
+                <span class="close ques_close">&times;</span>
+                <div class="cloze_question_marks">
+                    <label for="cat_marks">Marks:</label>
+                    <input class="cat_marks" type="number" name="cat_marks" id="cat_marks">
+                </div>
+                <div class="cloze_question_no">
+                    <h2>Question 1</h2>
+                    <h4>Sentence:</h4>
+                    <input type="text" class="cloze_sentence" placeholder="Write your Question here">
+                    <h6></h6>
+                    <button id="make_blank">Make as Blank</button>
+                </div>
+                <div id="selected_word">
+                    <h4 class="selected_word">Who</h4>
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+            <div id="form_demo" class="form_demo">
+
+            </div>
+        </div>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

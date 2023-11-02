@@ -1,0 +1,61 @@
+.cat_div{
+    margin-bottom: 10px;
+}
+
+input, select{
+    padding: 5px 7px;
+}
+
+.categorize_question, .cloze_question{
+    position: relative;
+    border: solid 2px lightgrey;
+    border-left-color: lightblue;
+    border-left-width: 12px;
+    padding: 15px 25px;
+}
+
+.close{
+    cursor: pointer;
+}
+
+.ques_close{
+    position: absolute;
+    right: 2%;
+    font-size: 34px;
+}
+
+.categorize_question_marks, .cloze_question_marks{
+    position: absolute;
+    right: 2%;
+    top: 15%;
+}
+
+.cat_marks{
+    width: 60px;
+}
+
+.categorize_selection{
+    border: dotted 2px red;
+}
+
+.cat_selection_heading h2{
+    display: inline-block;
+    margin-right: 110px;
+}
+
+.cat_items{
+    padding: 5px 10px;
+}
+
+.cat_items input, .cat_belongs_to select{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.cat_belongs_to{
+    padding: 5px 10px;
+}
+
+.selected_word{
+    display: inline-block;
+}
